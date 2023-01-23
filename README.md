@@ -60,3 +60,5 @@ If you are way ahead of your classmates and willing to accept some tough challen
 * [Weird matrix multiplication](https://www.codewars.com/kata/weird-matrix-multiplication)
 * [Insert dashes](https://www.codewars.com/kata/insert-dashes)
 * [Thinkful - Logic Drills: Red and bumpy](https://www.codewars.com/kata/thinkful-logic-drills-red-and-bumpy)
+
+
