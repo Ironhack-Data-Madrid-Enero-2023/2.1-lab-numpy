@@ -95,11 +95,25 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
+
+
+f = np.where(d == d_max, 100, (np.where(d > d_mean & d < d_max, 75, (np.where(d == d_mean, 50, (np.where(d > d_min & < d_mean, 25, 0)))))))
+
+
+
+print(f)
+
+
+
+'''
 for i,e in enumerate(d):
+        print(i, e)
         for j, f in enumerate(e):
+                print(j, f)
                 for k, g in enumerate(f):
+                        print(k, g)
                         if d[i][j][k] > d_min and d[i][j][k] < d_mean:
-                                f[i][j][k] = 25.
+                               f[i][j][k] = 25.
                         elif d[i][j][k] > d_mean and d[i][j][k] < d_max:
                                 f[i][j][k] = 75.
                         elif d[i][j][k] == d_min:
@@ -108,8 +122,10 @@ for i,e in enumerate(d):
                                 f[i][j][k] = 50.
                         elif d[i][j][k] == d_max:
                                 f[i][j][k] = 100.
+                        else:
+                                pass 
 
-
+'''
 
 
 """
