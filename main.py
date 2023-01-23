@@ -1,11 +1,10 @@
-#1. Import the NUMPY package under the name np.
+#1. Import the NUMPY package under the name npººº
+import numpy as np
 
 
 
 #2. Print the NUMPY version and the configuration.
-
-
-
+help(np)
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
