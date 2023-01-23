@@ -97,11 +97,12 @@ Note: you don't have to use Numpy in this question.
 """
 
 
-f = np.where(d == d_max, 100, (np.where(d > d_mean & d < d_max, 75, (np.where(d == d_mean, 50, (np.where(d > d_min & < d_mean, 25, 0)))))))
-
-
+f = np.where(d == d_max, 100, (np.where((d > d_mean) & (d < d_max), 75, (np.where(d == d_mean, 50, (np.where((d > d_min) & (d < d_mean), 25, 0)))))))
+g = np.where(d == d_min, 0, (np.where((d > d_min) & (d < d_mean), 25, (np.where(d == d_mean, 50, (np.where((d > d_mean) & (d < d_max), 75, 100)))))))
 
 print(f)
+print(g)
+
 
 
 
