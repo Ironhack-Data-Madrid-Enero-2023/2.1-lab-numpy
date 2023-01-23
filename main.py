@@ -98,10 +98,11 @@ Note: you don't have to use Numpy in this question.
 
 
 f = np.where(d == d_max, 100, (np.where((d > d_mean) & (d < d_max), 75, (np.where(d == d_mean, 50, (np.where((d > d_min) & (d < d_mean), 25, 0)))))))
-g = np.where(d == d_min, 0, (np.where((d > d_min) & (d < d_mean), 25, (np.where(d == d_mean, 50, (np.where((d > d_mean) & (d < d_max), 75, 100)))))))
+# g = np.where(d == d_min, 0, (np.where((d > d_min) & (d < d_mean), 25, (np.where(d == d_mean, 50, (np.where((d > d_mean) & (d < d_max), 75, 100)))))))
 
+print(d)
 print(f)
-print(g)
+#print(g)
 
 
 
@@ -163,3 +164,8 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+
+
+
+h = np.where(d == d_max, 'E', (np.where((d > d_mean) & (d < d_max), 'D', (np.where(d == d_mean, 'C', (np.where((d > d_min) & (d < d_mean), 'B', 'A')))))))
+print(h)
