@@ -1,6 +1,7 @@
 #1. Import the NUMPY package under the name np.
+import numpy as np
 
-
+np.random.random1
 
 #2. Print the NUMPY version and the configuration.
 
