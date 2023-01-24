@@ -107,13 +107,13 @@ print(f)
 
 
 
-'''
-for i,e in enumerate(d):
-        print(i, e)
-        for j, f in enumerate(e):
-                print(j, f)
-                for k, g in enumerate(f):
-                        print(k, g)
+
+for i in range(2):
+        
+        for j in range(3):
+                
+                for k in range(5):
+                        
                         if d[i][j][k] > d_min and d[i][j][k] < d_mean:
                                f[i][j][k] = 25.
                         elif d[i][j][k] > d_mean and d[i][j][k] < d_max:
@@ -127,8 +127,8 @@ for i,e in enumerate(d):
                         else:
                                 pass 
 
-'''
 
+print(f)
 
 """
 #17. Print d and f. Do you have your expected f?
